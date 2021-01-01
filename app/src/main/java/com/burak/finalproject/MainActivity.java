@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
                 age.getText().toString().equals("")||
                 sector.getText().toString().equals("")){
 
-            Toast.makeText(getApplicationContext(),"Alanlar boş bırakılamaz!",Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(),"Alanlar boş bırakılamaz!",Toast.LENGTH_SHORT).show();
 
         }else {
             String id = connection.push().getKey();
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
             age.setText("");
             sector.setText("");
 
-            Toast.makeText(getApplicationContext(), "Kaydınız başarıyla alınmıştır.", Toast.LENGTH_LONG).show();
+            Toast.makeText(getApplicationContext(), "Kaydınız başarıyla alınmıştır.", Toast.LENGTH_SHORT).show();
         }
     }
 
